@@ -15,6 +15,7 @@ import {TextField} from 'react-native-material-textfield';
 import {useDispatch} from 'react-redux';
 import {getName, getToken} from '../redux/actions';
 import {styles} from '../utils/styles';
+// import Video from 'react-native-video';
 
 const Login = ({navigation}) => {
   const [Email, setEmail] = useState('');
@@ -53,7 +54,15 @@ const Login = ({navigation}) => {
   };
 
   return (
-    <View style={styles.container}>
+    <View style={styles.container} testID="loginview">
+       {/* <Video 
+                     source={{uri : 'http://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4'}}
+                     style={{
+                         width : 600,
+                         height : 300
+                     }}
+             /> */}
+
       <Image source={require('../assets/logo.png')} style={styles.logo} />
       <View style={styles.form}>
         <Text style={styles.title}>Login</Text>
