@@ -55,13 +55,15 @@ const Login = ({navigation}) => {
 
   return (
     <View style={styles.container} testID="loginview">
-       {/* <Video 
-                     source={{uri : 'http://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4'}}
-                     style={{
-                         width : 600,
-                         height : 300
-                     }}
-             /> */}
+      {/* <Video
+        source={{
+          uri: 'http://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4',
+        }}
+        style={{
+          width: 600,
+          height: 300,
+        }}
+      /> */}
 
       <Image source={require('../assets/logo.png')} style={styles.logo} />
       <View style={styles.form}>
@@ -94,7 +96,7 @@ const Login = ({navigation}) => {
           labelFontSize={18}
           label="Password"
         /> */}
-        
+
         <Button onPress={onSend} title="login" />
         <View
           style={{

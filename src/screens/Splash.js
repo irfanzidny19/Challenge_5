@@ -13,7 +13,7 @@ const Splash = ({navigation}) => {
     <View style={styles.container}>
       <Text></Text>
       <Image source={require('../assets/logo.png')} />
-      <Text style={styles.name}>Muhammad Amir Hamzah</Text>
+      <Text style={styles.name}>Books Store</Text>
     </View>
   );
 };
